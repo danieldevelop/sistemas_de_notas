@@ -95,8 +95,8 @@ Nuestro equipo cuenta con 6 integrantes, los cuales son:
 
 - **Daniel Gómez G.** [danieldevelop](https://github.com/danieldevelop) - Desarrollador FullStack
 - **Raul Galleguillos.**
-- **Valentina.**  
-- **Valeria**
+- **Valentina Adasme.**  
+- **Valeria Pozo**
 - **Fernanda Duran**
 - **Jordy Segura**
 
