@@ -9,19 +9,26 @@ Sistema para gestionar las calificaciones de los estudiantes, puede insertar, mo
 1. Clonar el repositorio
 2. Crear base de datos con el nombre `sistema_de_notas`
 3. Importar el archivo `sistema_de_notas.sql` que se encuentra en la raíz del proyecto en la base de datos creada desde phpMyAdmin
-4. Crear archivo `env.php` en el directorio `includes` del proyecto con el siguiente contenido:
+4. Inserte un usuario de prueba en la table profesor, para poder ingresar al sistema. Ejemplo:
+    ```sql
+    insert into profesor (nombre, telefono, username, password) values ('Pedro Quiroz', 1234567, 'pquiroz', '123');
+    ```
+5. Crear archivo `env.php` en el directorio `includes` del proyecto con el siguiente contenido:
     
     ```php
     <?php
+
     define('DB_HOST', 'localhost');
     define('DB_USER', 'root');
     define('DB_PASSWORD', ''); // Tu contraseña de MySQL, si no tiene contraseña dejar vacío
     define('DB_NAME', 'sistema_de_notas');
+
+    ?>
     ```
 
-5. Iniciar apache y mysql en XAMPP, WamppServer o cualquier otro servidor local, que tengan instalado
-6. Abrir el navegador e ingresar a la url `http://localhost/<nombre_del_proyecto>`
-7. ¡Listo! Ya puede empezar a usar el sistema
+6. Iniciar apache y mysql en XAMPP, WamppServer o cualquier otro servidor local, que tengan instalado
+7. Abrir el navegador e ingresar a la url `http://localhost/<nombre_del_proyecto>`
+8. ¡Listo! Ya puede empezar a usar el sistema
 
 
 
