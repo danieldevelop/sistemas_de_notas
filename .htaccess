@@ -1,0 +1,15 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteRule ^(assets|css|img|js|components|controllers|docs|lib)/ - [L]
+
+<IfModule mod_rewrite.c>
+    # Se quita la extensiones de los archivos ya sea html y php
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -F
+    RewriteRule ^(.*)$ $1.html [NC,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^(.*)$ $1.php [NC,L]
+</IfModule>
