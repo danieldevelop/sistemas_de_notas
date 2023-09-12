@@ -1,7 +1,6 @@
-Options -Indexes
+Options All -Indexes
 
 RewriteEngine On
-RewriteRule ^(assets|css|img|js|components|controllers|docs|lib)/ - [L]
 
 <IfModule mod_rewrite.c>
     # Se quita la extensiones de los archivos ya sea html y php
